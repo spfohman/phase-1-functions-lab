@@ -5,7 +5,8 @@ function distanceFromHqInBlocks(street){
 }
 function distanceFromHqInFeet(street){
     let distance = distanceFromHqInBlocks(street);
-    return feet = distance * 264;
+    let feet = distance * 264;
+    return feet;
 }
 function distanceTravelledInFeet(start, destination){
     let distance = (destination - start)*264;
@@ -13,6 +14,7 @@ function distanceTravelledInFeet(start, destination){
 }
 function calculatesFarePrice(start, destination){
     let distance = distanceTravelledInFeet(start, destination);
+    let price;
     if (distance<400){
         return price = 0;
     }else if (distance >=400 && distance<= 2000){
